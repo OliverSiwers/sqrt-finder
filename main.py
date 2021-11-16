@@ -48,7 +48,7 @@ def sqrt(target, margin=0, maxIterations=1000, printSteps=False):
     index += 1
   return estimate + increment, index
 
-square = float(input("Please enter the number you want to get the sqaure root of: "))
+square = float(input("Please enter the number you want to find the sqaure root of: "))
 print()
 
 table = Table([10, 22, 22, 7]);
@@ -56,8 +56,8 @@ table.printRow(["Margin", "Root", "Square", "Steps"])
 
 for i in range(0, -10, -1):
   margin = 10**i
-  #root, steps = sqrt(square, margin)
-  #table.printRow([margin, root, root**2, steps])
+  root, steps = sqrt(square, margin)
+  table.printRow([margin, root, root**2, steps])
 
 root, steps = sqrt(square, 0, 100, True)
 table.printRow(["0", root, root**2, steps])
