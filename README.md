@@ -1,7 +1,3 @@
-# Python
+# Square Root Finder
 
-This is the Template Repl for Python.
-
-Python is a dynamic language emphasizing readability.
-
-[Check out the official docs here](https://www.python.org/).
+A small python program that finds the square root of a number, without using any premade square root functions.
