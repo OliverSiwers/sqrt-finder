@@ -16,7 +16,7 @@ class Table:
 
 def sqrt(target, margin=0, maxIterations=1000, printSteps=False):
   increment = 1
-  estimate = 1
+  estimate = 0
   prevToLarge = False
 
   index = 0
@@ -59,6 +59,6 @@ for i in range(0, -10, -1):
   root, steps = sqrt(square, margin)
   table.printRow([margin, root, root**2, steps])
 
-root, steps = sqrt(square, 0, 100, True)
+root, steps = sqrt(square, 0, 100)
 table.printRow(["0", root, root**2, steps])
 
